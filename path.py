@@ -278,6 +278,7 @@ def minPath(p1,p2,obstacle):
 
     last = p2
     thePath = [p2]
+    if dic[last][1] == p1: return []
 
     while last != p1:
         last = dic[last][1]
